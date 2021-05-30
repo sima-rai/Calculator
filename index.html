@@ -1,0 +1,121 @@
+<!DOCTYPE html>  <!-- defines that this document is an HTML5 document -->
+<html> <!-- root element of an html page -->
+<head><!-- element that contains meta information about html page -->
+
+<title> Simple Calculator </title> <!-- title for html page -->
+<meta charset="utf-8"> <!--specifies character encoding for html doc--> 
+<link rel="stylesheet"  href="styles.css"/>
+
+<!--<style> /* inoder to style the elements of the body we can style here */
+.test{
+	background-color: blue;
+
+
+}
+
+
+/**.container{
+	background-color: red;
+}**/	
+
+p.p1{
+
+	color: white;
+}	
+
+
+</style>-->
+
+
+
+
+
+</head>
+<body><!-- defines document's body/ container for all visible contents such as headings, paragraph, images -->
+
+<!--<p>	hello this is my html page </p>	-->
+
+<!--<marquee behavior="alternate">This is <em>a</em> Calculator</marquee> <!--it us used for scrolling txt or img left/right/up dowm -->
+<marquee direction="left" behavior="scroll" bgcolor="indigo" height=150% loop=10 scrolldelay=5> This is a Calculator</marquee>
+
+<div class="test"> <!-- it is like a division in a html document-->
+	
+<br><br>
+<!--<p class="p1"> hello this is div</p>-->
+
+
+</div>
+
+<!--
+<div class="container"> <!--class is used so that we can style the contents within div alltogether
+
+<p>this is div</p>
+
+<form>
+	
+<fieldset><!--to declare the fields that are required while making form
+<legend>form </legend>
+
+<label for="fname"> First name: </label>
+<input type="text" id="fname" name="fname"><br><br>
+
+<label for="lname"> Last name: </label>
+<input type="text" id="lname" name="lname"><br><br>
+<input type="submit"  value="Submit">
+</fieldset>
+
+
+</form>
+
+
+</div> -->
+
+
+<div class="container">
+	<fieldset id="container"> <!--used to group related elements in a block -->
+		
+    <form name="calculator">
+    	
+    	<input type="text"  id="display" name="display" readonly><br><br>
+
+    	<input class="button digits " type="button" value="7" onclick="calculator.display.value +='7'">
+    	<input class="button digits " type="button" value="8" onclick="calculator.display.value +='8'">
+    	<input class="button digits " type="button" value="9" onclick="calculator.display.value +='9'">
+    	<input class="button mathButtons " type="button" value="+" onclick="calculator.display.value +=' + '"> <br>
+
+
+
+
+    	<input class="button digits " type="button" value="4" onclick="calculator.display.value +='4'">
+    	<input class="button digits " type="button" value="5" onclick="calculator.display.value +='5'">
+    	<input class="button digits " type="button" value="6" onclick="calculator.display.value +='6'">
+    	<input class="button mathButtons " type="button" value="-" onclick="calculator.display.value +='-'"> <br>
+
+
+    	<input class="button digits " type="button" value="1" onclick="calculator.display.value +='1'">
+    	<input class="button digits " type="button" value="2" onclick="calculator.display.value +='2'">
+    	<input class="button digits " type="button" value="3" onclick="calculator.display.value +='3'">
+    	<input class="button mathButtons " type="button" value="*" onclick="calculator.display.value +='*'"> <br>
+
+
+    	<input id="clearButton" class="button " type="button" value="C" onclick="calculator.display.value =''">
+    	<input class="button digits " type="button" value="0" onclick="calculator.display.value +='0'">
+    	<input class="button mathButtons " type="button" value="=" onclick="calculator.display.value =eval(calculator.display.value)"> <!--this is the function that does the processing of the calculator -->
+    	<input class="button mathButtons " type="button" value="/'" onclick="calculator.display.value +='/'">
+
+    </form>
+	
+
+
+
+	</fieldset>
+	
+
+
+</div>
+
+
+
+</body>
+</html>
+
